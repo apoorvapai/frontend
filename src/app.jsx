@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://2c05-2409-4091-9045-1807-8044-4d6e-384e-7498.ngrok-free.app/chat', { query });
+      const res = await axios.post('https://6d47-2409-4091-9045-1807-f914-acc6-1e4d-e2d1.ngrok-free.app/chat', { query });
       setMessages((prev) => [...prev, { type: 'bot', text: res.data.response, timestamp }]);
     } catch (err) {
       setError('Failed to process query. Please try again.');
